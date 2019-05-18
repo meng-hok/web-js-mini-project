@@ -22,6 +22,15 @@
 </head>
 
 <body style="background-color:lavenderblush;">
+    <!------------------------------------------------- modal element for link to --------------------------->
+    <div class="modal fade " id="modalAskingQuestion" data-toggle="modal">
+
+    </div>
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+
+    </div>
+    <!------------------------------------------------- modal element for link to -----------------
     <!--------------------------------------------- navbar ----------------------------------------------------->
 
     <div id="first-nav-bar">
@@ -42,7 +51,7 @@
                             <button type="button" class="btn btn-default5">Search</button>
 
                             <button type="button" class="btn btn-default5" data-toggle="modal"
-                                data-target="#modalAskingQuestion">សួរសំណួរ</button>
+                                data-target="#modalAskingQuestion">Asking Question</button>
 
 
                         </form>
@@ -50,83 +59,87 @@
                 </ul>
                 <button type="button" class="btn btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" id="btnnGoIn"
                     data-toggle="modal" data-target="#modalContactForm">
-                    ចូលប្រើប្រាស់
+                    Sign Up
                 </button>
             </div>
 
         </nav>
     </div>
     <!-------------------------------------------------End Navbar -------------------------------------------->
-    <!------------------------------------------------- modal element for link to --------------------------->
-    <div class="modal fade " id="modalAskingQuestion" data-toggle="modal">
-
-    </div>
-    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-
-    </div>
-    <!------------------------------------------------- modal element for link to -----------------
-    <div class="text-center">
-        <a href="" class="btn" data-toggle="modal" data-target="#modalAskingQuestion">
-            <i class="fas fa-edit"></i> Asking Question </a>
-    </div>
-
-
-
-    <div class="text-center">
-        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Launch
-            Modal Contact Form</a>
-    </div> ---------->
-
 
     <!-- Container table  -->
     <div class="container-fluid">
         <div class="row">
+            <!-------------------------------------------------second leftside dropdown -------------------------------------------->
+
             <div class="col-sm-3 ">
                 <!-- style="background-color:lavender;" -->
+
                 <center>
                     <!--Subject Drobdown-->
                     <div class="subject-drop mt-3">
                         <!--Trigger-->
-                        <button class="btn btn-drop-subject dropdown-toggle" type="button" id="dropdownMenu1"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
-                        <!--Menu-->
-                        <div class="dropdown-menu dropdown-primary">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item-last" href="#">Something else here</a>
+
+                        <button class="btn btn-success btn-drop-subject m-0" id="first-fade-out">High School</button>
+
+                        <div class="border mx-1">
+                            <a class="dropdown-item first-drop" href="#">Action</a>
+                            <a class="dropdown-item first-drop" href="#">Another action</a>
+                            <a class="dropdown-item first-drop" href="#">Something else here</a>
+                            <a class="dropdown-item first-drop" href="#">Something else here</a>
                         </div>
                     </div>
                     <!--End Subject Dropdown -->
-
+                    <br>
                     <!--Language Dropdown-->
                     <div class="language-drop">
+
                         <!--Trigger-->
-                        <button class="btn btn-drop-subject dropdown-toggle" type="button" id="dropdownMenu1"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+                        <button class="btn btn-success btn-drop-subject m-0" id="second-fade-out">Language</button>
+
                         <!--Menu-->
-                        <div class="dropdown-menu dropdown-primary">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item-last" href="#">Something else here</a>
+                        <div class="border mx-1y">
+                            <a class="dropdown-item second-drop" href="#">Action</a>
+                            <a class="dropdown-item second-drop" href="#">Another action</a>
+                            <a class="dropdown-item second-drop" href="#">Something else here</a>
+                            <a class="dropdown-item second-drop" href="#">Something else here</a>
                         </div>
                     </div>
                     <!--Language Dropdown-->
+
+                    <br>
+                    <!--Programming Dropdown-->
+                    <div class="language-drop">
+
+                        <!--Trigger-->
+                        <button class="btn btn-success btn-drop-subject m-0" id="third-fade-out">Programming</button>
+
+                        <!--Menu-->
+                        <div class="border mx-1y">
+                            <a class="dropdown-item third-drop" href="#">Action</a>
+                            <a class="dropdown-item third-drop" href="#">Another action</a>
+                            <a class="dropdown-item third-drop" href="#">Something else here</a>
+                            <a class="dropdown-item third-drop" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <!--Programming Dropdown-->
                 </center>
             </div>
+            <!-------------------------------------------------second leftside dropdown -------------------------------------------->
+            <!-------------------------------------------------second rightside table -------------------------------------------->
             <div class="col-sm-9">
                 <!-- focus on right side table (container-fluid)   -->
                 <div class="container-fluid">
 
                     <div class="row">
-                        <div class="col-md-6 col-12 mt-3">
-                            <button type="button" id="tbl-table-left" class="btn btn-block btn-light-green">New
+                        <div class="col-md-6 col-12  mt-3 ">
+                            <button type="button" id="tbl-table-left"
+                                class="btn btn-block btn-light-green btn-drop-subject">New
                                 Question</button>
                         </div>
-                        <div class="col-md-6 col-12 mt-3">
-                            <button type="button" id="tbl-table-right" class="btn btn-block btn-light-green">Popular
+                        <div class="col-md-6 col-12 mt-3  ">
+                            <button type="button" id="tbl-table-right"
+                                class="btn btn-block btn-light-green btn-drop-subject">Popular
                                 Question</button>
                         </div>
                         <div class="col-md-12">
@@ -158,6 +171,8 @@
                 </div>
                 <!-- focus on right side table (container-fluid)   -->
             </div>
+            <!-------------------------------------------------second rightside table -------------------------------------------->
+
         </div>
     </div>
 
@@ -200,6 +215,15 @@
         $("#tbl-table-right").on("click", function () {
             newDesc();
         });
+        $("#first-fade-out").on("click", function () {
+            $(".first-drop").slideToggle(300);
+        });
+        $("#second-fade-out").click(function () {
+            $(".second-drop").slideToggle(300);
+        });
+        $("#third-fade-out").click(function () {
+            $(".third-drop").slideToggle(300);
+        })
     </script>
 
 
