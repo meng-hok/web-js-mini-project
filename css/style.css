@@ -1,0 +1,39 @@
+.navbar-brand{
+    margin-left: 20px;
+}
+.navbar{
+    background-color: #50a253 !important;
+}
+.logo-img{
+    height: 50px;
+}
+.btn-default5{
+    background-color: rgb(249, 251, 253) !important;
+    color: rgb(58, 54, 54) !important;
+    height:38px;
+}
+#btnGoIn{
+    align-self: left !important;
+}
+.btn-drop-subject{
+    background-color: #50a253 !important;
+    height: auto;
+    color: white !important;
+    font-weight: bold !important;
+    width: 98%;
+    border-radius: 3px !important;
+}
+.dropdown-menu{
+    width: 89%;
+    border: 1px solid #50a253 !important;
+
+}
+.dropdown-item{
+    border-bottom: 1px solid #50a253 !important;
+}
+.dropdown-item-last{
+    border-bottom: 0px solid #50a253 !important;
+    padding-left: 25px;
+    padding-top: 30px !important;
+    color: rgb(0, 0, 0);
+}

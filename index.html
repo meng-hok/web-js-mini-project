@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="jquery-3.4.1.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body style="background-color:lavenderblush;">
+    <!--------------------------------------------- navbar ----------------------------------------------------->
+
+    <div id="first-nav-bar">
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand mr-5" href="#">
+                <img src="image/logo-beta.png" alt="forum-logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 ml-auto">
+                            <input class="form-control" type="search" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+                            <button type="button" class="btn btn-default5">Search</button>
+
+                            <button type="button" class="btn btn-default5" data-toggle="modal"
+                                data-target="#modalAskingQuestion">សួរសំណួរ</button>
+
+
+                        </form>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" id="btnnGoIn"
+                    data-toggle="modal" data-target="#modalContactForm">
+                    ចូលប្រើប្រាស់
+                </button>
+            </div>
+
+        </nav>
+    </div>
+    <!-------------------------------------------------End Navbar -------------------------------------------->
+    <!------------------------------------------------- modal element for link to --------------------------->
+    <div class="modal fade " id="modalAskingQuestion" data-toggle="modal">
+
+    </div>
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+
+    </div>
+    <!------------------------------------------------- modal element for link to -----------------
+    <div class="text-center">
+        <a href="" class="btn" data-toggle="modal" data-target="#modalAskingQuestion">
+            <i class="fas fa-edit"></i> Asking Question </a>
+    </div>
+
+
+
+    <div class="text-center">
+        <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Launch
+            Modal Contact Form</a>
+    </div> ---------->
+
+
+    <!-- Container table  -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 ">
+                <!-- style="background-color:lavender;" -->
+                <center>
+                    <!--Subject Drobdown-->
+                    <div class="subject-drop mt-3">
+                        <!--Trigger-->
+                        <button class="btn btn-drop-subject dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-primary">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item-last" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <!--End Subject Dropdown -->
+
+                    <!--Language Dropdown-->
+                    <div class="language-drop">
+                        <!--Trigger-->
+                        <button class="btn btn-drop-subject dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-primary">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item-last" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <!--Language Dropdown-->
+                </center>
+            </div>
+            <div class="col-sm-9">
+                <!-- focus on right side table (container-fluid)   -->
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-md-6 col-12 mt-3">
+                            <button type="button" id="tbl-table-left" class="btn btn-block btn-light-green">New
+                                Question</button>
+                        </div>
+                        <div class="col-md-6 col-12 mt-3">
+                            <button type="button" id="tbl-table-right" class="btn btn-block btn-light-green">Popular
+                                Question</button>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead>
+
+                                </thead>
+                                <tbody id="t_body">
+                                    <tr id="meme"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- left space -->
+                        </div>
+
+                        <div class="col-md-9 mt-2 ">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination pg-blue">
+                                    <li class="page-item"><a class="page-link">Previous</a></li>
+                                    <li class="page-item"><a class="page-link">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item"><a class="page-link">3</a></li>
+                                    <li class="page-item"><a class="page-link">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- focus on right side table (container-fluid)   -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Container - table -->
+    <center>
+
+    </center>
+    <script src="modal.js"></script>
+    <script src="prepareJS.js"> </script>
+    <script>
+        var main_question = new Array();
+        let i = 0;
+
+        while (i < 10) {
+            main_question.push({ title: "first-project", topic: "ctn news", tag: "math", moredetail: "the first programming language" });
+            $("#t_body").append(` 
+              <tr style="height : 70px;">
+                      <td>${i} Welcome to Hrd</td>
+                      <td><sub>30 <3  </sub></td>
+                      <td>Welcome to Hrd </td>
+                  </tr>`)
+            i++;
+        }
+
+
+        var question;
+        $('#submit').click(function () {
+            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() };
+            console.log(question);
+            main_question.push(question);
+            /* 
+                newAsc() OR popularDesc()
+                call display method
+            */
+        });
+
+        $("#tbl-table-left").on("click", function () {
+            newAsc();
+        });
+        $("#tbl-table-right").on("click", function () {
+            newDesc();
+        });
+    </script>
+
+
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js">
+    </script>
+
+
+</body>
+
+</html>
