@@ -1,9 +1,11 @@
 Question on submit will return Object and append GLOBAL main_question (var)
 Register return Object
 =====================Target ===================
+TableRow(!) and Footer are being designed
 read data from main_question (require table row idea)
 onsubmit rework function
+
 =====================lack =====================
-tr Interface
+
 reload all value function
 search - datalist 
