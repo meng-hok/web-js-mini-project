@@ -106,9 +106,14 @@
 
     </center>
     <script src="modal.js"></script>
+    
     <script src="prepareJS.js"> </script>
     <script>
+        // user_info => details info , user_account => account+password;
         var main_question = new Array();
+        var user_account = new Array();
+        var user_info = new Array();
+        var current_user_name = null;
         let i = 0;
 
         while (i < 10) {
@@ -126,8 +131,9 @@
         var question;
         $('#submit').click(function () {
             question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() };
-            console.log(question);
+          
             main_question.push(question);
+            console.log(main_question);
             /* 
                 newAsc() OR popularDesc()
                 call display method
@@ -149,10 +155,24 @@
         $("#third-fade-out").click(function () {
             $(".third-drop").slideToggle(300);
         })
+
+        const questionToDatalist = () => {
+            let array = new Array();
+            main_question.forEach(element => {
+                array.push(element.topic);
+            });
+            console.log(array)
+            setDataList(array)
+        }
+        const setDataList = (data) => {
+            $("#data-store").empty();
+            for (var i = 0; i < data.length; i++) {
+                $("#data-store").append("<option value='" + data[i] + "'>");
+            }
+        }
+        questionToDatalist()
     </script>
-
-
-
+    <script src="register.js">  </script>
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

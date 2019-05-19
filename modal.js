@@ -22,7 +22,7 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
     <button class="btn btn-success btn-drop-subject m-0" id="second-fade-out">Language</button>
 
     <!--Menu-->
-    <div class="border mx-1y">
+    <div class="border mx-1">
         <a class="dropdown-item second-drop" href="#">Action</a>
         <a class="dropdown-item second-drop" href="#">Another action</a>
         <a class="dropdown-item second-drop" href="#">Something else here</a>
@@ -39,7 +39,7 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
     <button class="btn btn-success btn-drop-subject m-0" id="third-fade-out">Programming</button>
 
     <!--Menu-->
-    <div class="border mx-1y">
+    <div class="border mx-1">
         <a class="dropdown-item third-drop" href="#">Action</a>
         <a class="dropdown-item third-drop" href="#">Another action</a>
         <a class="dropdown-item third-drop" href="#">Something else here</a>
@@ -67,7 +67,8 @@ $("#first-nav-bar").html(`
     <ul class="navbar-nav mr-auto w-75">
         <li class="nav-item w-100">
             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control w-50  " type="search" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+                <input class="form-control w-50  " list="data-store" type="search" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+               
                 <button type="button" class="ml-0 btn btn-default5">Search</button>
 
                 <button type="button" class="btn btn-default5" data-toggle="modal"
@@ -84,6 +85,7 @@ $("#first-nav-bar").html(`
 </div>
 
 </nav>
+<datalist id="data-store">
 `);
 /*----------------------------------------------------------------- navbar -----------------------------------------------------------------  */
 

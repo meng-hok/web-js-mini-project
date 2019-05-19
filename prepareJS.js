@@ -1,34 +1,39 @@
 const newAsc = () => {
     $("#t_body").empty();
-    main_question.forEach((value,key)=>{
-        console.log(key)
-        $("#t_body").append(` 
-          <tr>
-              <td>${key}</td>
-              <td><sub>30 <3  </sub></td>
-              <td>firstName</td>
-          </tr>`
-          )
-    });
- }  
+    main_question.forEach((value, key) => {
 
- const newDesc = () => {
-    $("#t_body").empty();
-    main_question.reverse().forEach((value,key)=>{
-        console.log(value)
+        // title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val()
         $("#t_body").append(` 
           <tr>
               <td>${key}</td>
-              <td><sub>30 <3  </sub></td>
-              <td>firstName</td>
+              <td>${value.title}</td>
+              <td>${value.topic}</td>
+              <td>${value.tag}</td>
+              <td>${value.moredetail}</td>
           </tr>`
         )
     });
- }
+}
+
+const newDesc = () => {
+    $("#t_body").empty();
+    main_question.reverse().forEach((value, key) => {
+        console.log(value)
+        $("#t_body").append(` 
+          <tr>
+          <td>${key}</td>
+          <td>${value.title}</td>
+          <td>${value.topic}</td>
+          <td>${value.tag}</td>
+          <td>${value.moredetail}</td>
+          </tr>`
+        )
+    });
+}
 
 
-/* 
-function call element to reload 
+/*
+function call element to reload
 
 
 
