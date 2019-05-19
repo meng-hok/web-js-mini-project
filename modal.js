@@ -8,7 +8,7 @@ $("#modalAskingQuestion").html(`
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-
+    
         <div class="modal-body">
             <div class="form-group row">
                 <label for="title" class="col-sm-2 col-form-label">Title</label>
