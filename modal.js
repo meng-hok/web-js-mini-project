@@ -1,3 +1,91 @@
+/*----------------------------------------------------------------- left dropdown -----------------------------------------------------------------  */
+
+$("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
+<div class="subject-drop mt-3">
+    <!--Trigger-->
+
+    <button class="btn btn-success btn-drop-subject m-0" id="first-fade-out">High School</button>
+
+    <div class="border mx-1">
+        <a class="dropdown-item first-drop" href="#">Action</a>
+        <a class="dropdown-item first-drop" href="#">Another action</a>
+        <a class="dropdown-item first-drop" href="#">Something else here</a>
+        <a class="dropdown-item first-drop" href="#">Something else here</a>
+    </div>
+</div>
+<!--End Subject Dropdown -->
+<br>
+<!--Language Dropdown-->
+<div class="language-drop">
+
+    <!--Trigger-->
+    <button class="btn btn-success btn-drop-subject m-0" id="second-fade-out">Language</button>
+
+    <!--Menu-->
+    <div class="border mx-1y">
+        <a class="dropdown-item second-drop" href="#">Action</a>
+        <a class="dropdown-item second-drop" href="#">Another action</a>
+        <a class="dropdown-item second-drop" href="#">Something else here</a>
+        <a class="dropdown-item second-drop" href="#">Something else here</a>
+    </div>
+</div>
+<!--Language Dropdown-->
+
+<br>
+<!--Programming Dropdown-->
+<div class="language-drop">
+
+    <!--Trigger-->
+    <button class="btn btn-success btn-drop-subject m-0" id="third-fade-out">Programming</button>
+
+    <!--Menu-->
+    <div class="border mx-1y">
+        <a class="dropdown-item third-drop" href="#">Action</a>
+        <a class="dropdown-item third-drop" href="#">Another action</a>
+        <a class="dropdown-item third-drop" href="#">Something else here</a>
+        <a class="dropdown-item third-drop" href="#">Something else here</a>
+    </div>
+</div>
+<!--Programming Dropdown-->`);
+
+/*----------------------------------------------------------------- left dropdown -----------------------------------------------------------------  */
+
+
+/*----------------------------------------------------------------- navbar -----------------------------------------------------------------  */
+
+$("#first-nav-bar").html(`
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark ">
+<a class="navbar-brand mr-5" href="#">
+    <img src="image/logo-beta.png" alt="forum-logo" class="logo-img">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto w-75">
+        <li class="nav-item w-100">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control w-50  " type="search" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+                <button type="button" class="ml-0 btn btn-default5">Search</button>
+
+                <button type="button" class="btn btn-default5" data-toggle="modal"
+                    data-target="#modalAskingQuestion">Asking Question</button>
+
+
+            </form>
+        </li>
+    </ul>
+    <button type="button" class="btn btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" id="btnnGoIn"
+        data-toggle="modal" data-target="#modalContactForm">
+        Sign Up
+    </button>
+</div>
+
+</nav>
+`);
+/*----------------------------------------------------------------- navbar -----------------------------------------------------------------  */
 
 $("#modalAskingQuestion").html(`
 <div class="modal-dialog modal-xl" role="document">
