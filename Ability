@@ -1,7 +1,7 @@
 Question on submit will return Object and append GLOBAL main_question (var)
 Register return Object
 =====================Target ===================
-read data from main_question 
+read data from main_question (require table row idea)
 onsubmit rework function
 =====================lack =====================
 tr Interface
