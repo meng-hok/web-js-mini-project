@@ -1,4 +1,4 @@
-
+/* linh part */
 var email;
 var re_email;
 var username;
@@ -66,3 +66,43 @@ function validated(){
     else
         return true;
 }
+/* pengsea part */
+$("#logIn").click(function() {  
+    var userName = $("#userName").val();
+    var pw = $("#password").val();
+    console.log(userName.length);
+  
+    console.log(pw.length);
+    if (checkLogIn(userName, pw)) {   
+      $('#myModal').modal('hide');
+    } else {
+      $("#userName").css("border-color", "red");
+      $("#password").css("border-color", "red");
+      $("#userName")
+        .mouseover(function() {
+          $("#ex1").css("color", "red");
+        })
+        .mouseout(function() {
+          $("#ex1").css("color", "transparent");
+        });
+        $("#password")
+        .mouseover(function() {
+          $("#ex2").css("color", "red");
+        })
+        .mouseout(function() {
+          $("#ex2").css("color", "transparent");
+        });
+    }
+  });
+  var Account = user_account;
+  // Account["Pengsea"] = "1233456";
+  // Account["Menghok"] = "654321";
+  // Account["kimlinh"] = "sss111222";
+  // Account["Nita"] = "111222";
+  // Account["Navy"] = "0987654321";
+  function checkLogIn(userName, pw) {
+    if (Account[userName] == pw) {
+      return true;
+    }
+    return false;
+  }

@@ -67,28 +67,68 @@ $("#first-nav-bar").html(`
     <ul class="navbar-nav mr-auto w-75">
         <li class="nav-item w-100">
             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control w-50  " list="data-store" type="search" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+                <input class="form-control w-50  " autocomplete=off list="data-store" type="search" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
                
                 <button type="button" class="ml-0 btn btn-default5">Search</button>
 
-                <button type="button" class="btn btn-default5" data-toggle="modal"
+                <button id="btn-ask" type="button" class="btn btn-default5" data-toggle="modal"
                     data-target="#modalAskingQuestion">Asking Question</button>
 
 
             </form>
         </li>
     </ul>
-    <button type="button" class="btn btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" id="btnnGoIn"
+    <button id="btn-login" type="button" class="btn btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" data-toggle="modal" data-target="#myModal">
+        Sign In
+    </button>
+    <button id="btn-register" type="button" class="btn  btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" id="btnnGoIn"
         data-toggle="modal" data-target="#modalContactForm">
         Sign Up
     </button>
+    <button id="btn-logout" class="btn  btn-outline-white  btn-success btn-md my-2 my-sm-0 ml-3" >Log Out</button>   
 </div>
 
 </nav>
 <datalist id="data-store">
 `);
 /*----------------------------------------------------------------- navbar -----------------------------------------------------------------  */
+$("#myModal").html(`
+<div class="modal-dialog" role="document">
 
+            <div class="modal-content">
+                <div>
+                    <div class="modal-header">
+                        <h3 class="modal-title text-white">Log in</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <div style="margin-right: 10px; margin-top: 3px"> <span style="color: red"
+                                    aria-hidden="true">&times;</span></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="userName">User Name:<i class="fas fa-exclamation-circle" id="ex1"></i></label>
+                        <input type="text" name="userName" id="userName" class="form-control">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Password: </label>
+                        <input type="password" name="password" id="password" class="form-control" >
+                        <i class="fas fa-exclamation-circle ml-2" id="ex2"></i>
+                        
+                    </div>
+                   <div class="link"> <a href="http://">Create new Account</a></div>
+                    <div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mr-4" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary mr-4" id="logIn">Login</button>
+                </div>
+            </div>
+        </div>
+`);
+// login
 $("#modalAskingQuestion").html(`
 <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">

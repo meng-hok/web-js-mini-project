@@ -1,3 +1,6 @@
+$("#btn-ask").attr("data-target","#myModal")
+// #modalAskingQuestion#modalContactForm
+
 const newAsc = () => {
     $("#t_body").empty();
     main_question.forEach((value, key) => {
