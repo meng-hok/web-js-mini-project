@@ -1,6 +1,9 @@
 $("#btn-ask").attr("data-target","#myModal")
 // #modalAskingQuestion#modalContactForm
-
+$("#btn-logout").on("click",function () {
+    current_user_name = null;
+    $("#btn-ask").attr("data-target","#myModal");
+});
 const newAsc = () => {
     $("#t_body").empty();
     main_question.forEach((value, key) => {

@@ -46,7 +46,9 @@ function getData() {
         user_info.push({ email : email , username: username, password: password, gender: gender , department : department , university : university });
         user_account[email] = password; 
         console.log(user_info)   
-        console.log(user_account)     
+        console.log(user_account)  
+        current_user_name = username;
+        $("#btn-ask").attr("data-target","#modalAskingQuestion");
     } catch (msg) {
         console.log(msgError);
         return 0;
@@ -102,6 +104,8 @@ $("#logIn").click(function() {
   // Account["Navy"] = "0987654321";
   function checkLogIn(userName, pw) {
     if (Account[userName] == pw) {
+      current_user_name = userName;
+      $("#btn-ask").attr("data-target","#modalAskingQuestion");
       return true;
     }
     return false;
