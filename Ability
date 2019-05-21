@@ -1,9 +1,11 @@
 Question on submit will return Object and append GLOBAL main_question (var)
 Register return Object
 =====================Target ===================
+datatarget dynasmic !!!!!!
 TableRow(!) and Footer are being designed
 read data from main_question (require table row idea)
 onsubmit rework function
+
 
 =====================lack =====================
 
