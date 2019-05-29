@@ -27,6 +27,9 @@
         .list>li>a {
             color: #FFF;
         }
+        .ck-content{
+            height: 300px;
+        }
     </style>
 </head>
 
@@ -195,8 +198,9 @@
             question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() };
 
             main_question.push(question);
-            console.log(main_question);
             paginator(main_question.length);
+            eventToPaginator();
+            displayer( current_page==0 ? 0 : current_page-1);
             /* 
                 newAsc() OR popularDesc()
                 call display method

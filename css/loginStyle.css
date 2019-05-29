@@ -38,7 +38,8 @@ i{
     margin-bottom: 0;
     line-height: 2;
     cursor: default;
-    color: rgb(231, 216, 216);
+    /* color: rgb(231, 216, 216); */
+    color: #f8f9fa;
     margin-left: 215px;
     line-height: 2;
     cursor: default;

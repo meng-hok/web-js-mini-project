@@ -94,12 +94,13 @@ $("#first-nav-bar").html(`
 <datalist id="data-store">
 `);
 /*----------------------------------------------------------------- navbar -----------------------------------------------------------------  */
+/*--------- LOGIN-----*/
 $("#myModal").html(` <div class="modal-dialog" role="document">
 
 <div class="modal-content">
     <div>
         <div class="mhead">
-            <h3 class="mtitle">Log in</h3>
+            <h3 class="mtitle font-weight-bold">Log in</h3>
             <button type="button" class="out" data-dismiss="modal" aria-label="Close">
                 <div style="margin-right: 10px; margin-top: 3px"> <span style="color: red;"
                         aria-hidden="true" class="clox">&times;</span></div>
@@ -131,7 +132,7 @@ $("#myModal").html(` <div class="modal-dialog" role="document">
     </div>
 </div>
 </div>`);
-// login
+/*----------------------------------------Asking Question-------------------------------------------------------------* */ 
 $("#modalAskingQuestion").html(`
 <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
@@ -170,7 +171,7 @@ $("#modalAskingQuestion").html(`
                 <label for="detail" class="col-sm-2 col-form-label">More Detail</label>
                 <div class="col-sm-10">
                    <!-- <input type="text" class="form-control" id="detail"> -->
-                    <textarea name="my-editor" id="detail" cols="30" rows="10"> </textarea>
+                    <textarea  name="my-editor" id="detail" cols="30" rows="10" style="height:320px;"> </textarea>
                     
                 </div>
             </div>

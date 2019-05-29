@@ -1,4 +1,4 @@
-$("#btn-ask").attr("data-target","#myModal")
+// $("#btn-ask").attr("data-target","#myModal")
 // #modalAskingQuestion#modalContactForm
 $("#btn-logout").on("click",function () {
     current_user_name = null;
@@ -43,11 +43,15 @@ const paginator = (arrayLength) => {
     $("#paginator").html(numberList);
 }
 
-$(function(){
+const eventToPaginator = () => {
     $(".link-number").on("click",function(){
         current_page = parseInt($(this).attr("data-id"));
         displayer(parseInt($(this).attr("data-id"))-1)
     })
+}
+
+$(function(){
+    eventToPaginator();
 
     ClassicEditor.create( document.querySelector( '#detail' ), {
         // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
