@@ -1,4 +1,4 @@
-label {
+.labeler {
     display: inline-block;
     margin-bottom: 23px;
     margin-left: 20px;
@@ -11,7 +11,7 @@ label {
 .lin{
     text-align: center;
 }
-i{
+.ipengsea{
     color: transparent;
 }
 .fcontrol {

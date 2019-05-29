@@ -69,7 +69,7 @@ $("#first-nav-bar").html(`
     <ul class="navbar-nav mr-auto w-75">
         <li class="nav-item w-100">
             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control w-50  " autocompleted="off" list="data-store" type="search" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+                <input class="form-control w-50  "  list="data-store" type="text" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search"  autocomplete="off"/>
                
                 <button type="button" class="ml-0 btn btn-default5">Search</button>
 
@@ -109,15 +109,15 @@ $("#myModal").html(` <div class="modal-dialog" role="document">
     </div>
     <div class="mbody">
                           <div>
-            <label for="userName">User Name:<i class="fas fa-exclamation-circle" id="ex1"></i></label>
+            <label for="userName" class="labeler">User Name:<i class="fas fa-exclamation-circle ipengsea" id="ex1"></i></label>
             <input type="text" name="userName" id="userName" class="fcontrol">
             
         </div>
 
         <div class="form-group div2">
-            <label>Password: </label>
+            <label class="labeler">Password: </label>
             <input type="password" name="password" id="password" class="fcontrol" >
-            <i class="fas fa-exclamation-circle ml-2" id="ex2"></i>
+            <i class="fas fa-exclamation-circle ml-2 ipengsea" id="ex2"></i>
             
         </div>
         <p style="color: red" class="invalidName" id="inName">Invalid user's name or Password</p>
