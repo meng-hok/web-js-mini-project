@@ -169,7 +169,9 @@ $("#modalAskingQuestion").html(`
             <div class="form-group row">
                 <label for="detail" class="col-sm-2 col-form-label">More Detail</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="detail">
+                   <!-- <input type="text" class="form-control" id="detail"> -->
+                    <textarea name="my-editor" id="detail" cols="30" rows="10"> </textarea>
+                    
                 </div>
             </div>
 

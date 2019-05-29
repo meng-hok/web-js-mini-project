@@ -98,11 +98,11 @@ $("#logIn").click(function() {
     }
   });
   var Account = user_account;
-  // Account["Pengsea"] = "1233456";
-  // Account["Menghok"] = "654321";
-  // Account["kimlinh"] = "sss111222";
-  // Account["Nita"] = "111222";
-  // Account["Navy"] = "0987654321";
+  Account["Pengsea"] = "1233456";
+  Account["Menghok"] = "654321";
+  Account["kimlinh"] = "sss111222";
+  Account["Nita"] = "111222";
+  Account["Navy"] = "0987654321";
   function checkLogIn(userName, pw) {
     if (Account[userName] == pw) {
       current_user_name = userName;
@@ -111,3 +111,4 @@ $("#logIn").click(function() {
     }
     return false;
   }
+

@@ -49,6 +49,15 @@ $(function(){
         displayer(parseInt($(this).attr("data-id"))-1)
     })
 
+    ClassicEditor.create( document.querySelector( '#detail' ), {
+        // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+    } )
+    .then( editor => {
+        window.editor = editor;
+    } )
+    .catch( err => {
+        console.error( err.stack );
+    } );
   
 })
 
