@@ -94,42 +94,43 @@ $("#first-nav-bar").html(`
 <datalist id="data-store">
 `);
 /*----------------------------------------------------------------- navbar -----------------------------------------------------------------  */
-$("#myModal").html(`
-<div class="modal-dialog" role="document">
+$("#myModal").html(` <div class="modal-dialog" role="document">
 
-            <div class="modal-content">
-                <div>
-                    <div class="modal-header">
-                        <h3 class="modal-title text-white">Log in</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <div style="margin-right: 10px; margin-top: 3px"> <span style="color: red"
-                                    aria-hidden="true">&times;</span></div>
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <label for="userName">User Name:<i class="fas fa-exclamation-circle" id="ex1"></i></label>
-                        <input type="text" name="userName" id="userName" class="form-control">
-                        
-                    </div>
-                    <div class="form-group">
-                        <label>Password: </label>
-                        <input type="password" name="password" id="password" class="form-control" >
-                        <i class="fas fa-exclamation-circle ml-2" id="ex2"></i>
-                        
-                    </div>
-                   <div class="link"> <a href="http://">Create new Account</a></div>
-                    <div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary mr-4" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary mr-4" id="logIn">Login</button>
-                </div>
-            </div>
+<div class="modal-content">
+    <div>
+        <div class="mhead">
+            <h3 class="mtitle">Log in</h3>
+            <button type="button" class="out" data-dismiss="modal" aria-label="Close">
+                <div style="margin-right: 10px; margin-top: 3px"> <span style="color: red;"
+                        aria-hidden="true" class="clox">&times;</span></div>
+            </button>
         </div>
-`);
+    </div>
+    <div class="mbody">
+                          <div>
+            <label for="userName">User Name:<i class="fas fa-exclamation-circle" id="ex1"></i></label>
+            <input type="text" name="userName" id="userName" class="fcontrol">
+            
+        </div>
+
+        <div class="form-group div2">
+            <label>Password: </label>
+            <input type="password" name="password" id="password" class="fcontrol" >
+            <i class="fas fa-exclamation-circle ml-2" id="ex2"></i>
+            
+        </div>
+        <p style="color: red" class="invalidName" id="inName">Invalid user's name or Password</p>
+
+       <div class="lin"> <a href="http://">Create new Account</a></div>
+        <div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn mr-4 can" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary mr-4" id="logIn">Login</button>
+    </div>
+</div>
+</div>`);
 // login
 $("#modalAskingQuestion").html(`
 <div class="modal-dialog modal-xl" role="document">
@@ -256,7 +257,7 @@ $("#modalContactForm").html(`
   </div>
 </div>
 </div>
-`) 
+`)
 
 $("#first-fade-out").on("click", function () {
     $(".first-drop").slideToggle(300);

@@ -80,6 +80,7 @@ $("#logIn").click(function() {
     } else {
       $("#userName").css("border-color", "red");
       $("#password").css("border-color", "red");
+      $("#inName").css("display","flex");
       $("#userName")
         .mouseover(function() {
           $("#ex1").css("color", "red");

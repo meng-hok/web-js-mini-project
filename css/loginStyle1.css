@@ -1,3 +1,4 @@
+
 label {
     display: inline-block;
     margin-bottom: 23px;
@@ -5,23 +6,19 @@ label {
     margin-top: 5px;
     
 }
-.clox{
-    height: 30px;
-}
-.lin{
+.link{
     text-align: center;
 }
 i{
     color: transparent;
 }
-.fcontrol {
+.form-control {
     display: inline;
     max-width: 60%;
     float: right;
     margin-right: 38px;
 }
-.mhead {
-    height: 55px;
+.modal-header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
@@ -34,16 +31,12 @@ i{
     padding: 0px;
     background-color: rgb(76, 206, 97);
 }
-.mtitle {
+.modal-title {
     margin-bottom: 0;
     line-height: 2;
     cursor: default;
-    color: rgb(231, 216, 216);
-    margin-left: 215px;
-    line-height: 2;
-    cursor: default;
 }
-.mbody {
+.modal-body {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -51,25 +44,20 @@ i{
     padding-right: 50px;
     padding-left: 50px;
 }
-.out {
-    display: contents;
+.close {
     float: right;
-    font-size: 31px;
+    font-size: 45px;
     font-weight: 700;
+    
     color: #000;
     text-shadow: 0 1px 0 #fff;
 }
+.modal-title {
+    color: rgb(231, 216, 216);
+    margin-left: 215px;
+    line-height: 2;
+    cursor: default;
+}
 input:hover{
     background-color: rgb(191, 217, 240);
-}
-.invalidName{
-    display: none;
-    margin-left: 80px;
-    margin-bottom: 0px;
-}
-.div2{
-    margin-bottom: 0px
-}
-.can{
-    background-color: dimgray;
 }
