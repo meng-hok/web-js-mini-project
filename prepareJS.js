@@ -12,8 +12,7 @@ const newAsc = () => {
             main_question =  main_question.reverse();
             order =true;  
         }
-           
-            
+
         displayer(0);
 }
 
