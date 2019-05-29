@@ -17,9 +17,16 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/loginStyle.css"> -->
     <script src="jquery-3.4.1.js"></script>
-    
-    <style>
 
+    <style>
+        .list {
+            padding-top: 10%;
+        }
+
+        .footer-row,
+        .list>li>a {
+            color: #FFF;
+        }
     </style>
 </head>
 
@@ -31,7 +38,7 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
 
-        
+
     </div>
     <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
@@ -41,7 +48,7 @@
     <!--------------------------------------------- navbar ----------------------------------------------------->
 
     <div id="first-nav-bar">
-       
+
     </div>
     <!-------------------------------------------------End Navbar -------------------------------------------->
 
@@ -54,7 +61,7 @@
                 <!-- style="background-color:lavender;" -->
 
                 <center id="left-side-3-dropdown">
-                    
+
                 </center>
             </div>
             <!-------------------------------------------------second leftside dropdown -------------------------------------------->
@@ -90,12 +97,8 @@
 
                         <div class="col-md-9 mt-2 ">
                             <nav aria-label="Page navigation example">
-                                <ul class="pagination pg-blue">
-                                    <li class="page-item"><a class="page-link">Previous</a></li>
-                                    <li class="page-item"><a class="page-link">1</a></li>
-                                    <li class="page-item"><a class="page-link">2</a></li>
-                                    <li class="page-item"><a class="page-link">3</a></li>
-                                    <li class="page-item"><a class="page-link">Next</a></li>
+                                <ul class="pagination pg-blue" id="paginator">
+
                                 </ul>
                             </nav>
                         </div>
@@ -107,13 +110,64 @@
 
         </div>
     </div>
+    <footer class="mt-3 pt-2" style="background-color: #656D78">
 
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-sm-3">
+                    <h4>Service</h4>
+                    <ul class="list">
+                        <li><a href="http://www.khmeracademy.org/elearning">វីឌីអូបង្រៀន</a></li>
+                        <li><a href="http://www.khmeracademy.org/tutorial">ឯកសារ</a></li>
+                        <li><a href="http://forum.khmeracademy.org">វេទិការ</a></li>
+                        <li><a href="http://news.khmeracademy.org" target="_blank">ព័ត៌មាន</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Social Media</h4>
+                    <ul class="list">
+                        <li><a href="https://www.facebook.com/KhmerAcademy.Org/" target="_blank">Facebook</a></li>
+                        <li><a href="https://plus.google.com/+KhmerAcademyOrg/posts" target="_blank">Google</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCnE8zj9WeCl0Jvi8mX6olww"
+                                target="_blank">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Download Mobile App</h4>
+                    <ul class="list">
+                        <li><a href="https://itunes.apple.com/kh/app/khmer-academy/id1082906587?mt=8"
+                                target="_blank"><img src="/resources/client/img/icon/appstore.png"></a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=org.khmeracademy"
+                                target="_blank"><img src="/resources/client/img/icon/googleplay.png"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Searching On Facebook</h4>
+                    <div class="fb-like-box fb_iframe_widget" data-colorscheme="dark" data-header="false"
+                        data-href="https://www.facebook.com/KhmerAcademy.Org" data-show-border="false"
+                        data-show-faces="true" data-stream="false"
+                        fb-iframe-plugin-query="app_id=358370081247839&amp;color_scheme=dark&amp;container_width=300&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKhmerAcademy.Org&amp;locale=en_GB&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"
+                        fb-xfbml-state="rendered"><span
+                            style="vertical-align: bottom; width: 300px; height: 214px;"><iframe name="f126730ab8a2184"
+                                width="1000px" height="1000px" frameborder="0" allowtransparency="true"
+                                allowfullscreen="true" scrolling="no" allow="encrypted-media"
+                                title="fb:like_box Facebook Social Plugin"
+                                src="https://www.facebook.com/v2.10/plugins/like_box.php?app_id=358370081247839&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df1175cdf68ebf6c%26domain%3Dforum.khmeracademy.org%26origin%3Dhttp%253A%252F%252Fforum.khmeracademy.org%252Ff38abce1ea3de5%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=300&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKhmerAcademy.Org&amp;locale=en_GB&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"
+                                style="border: none; visibility: visible; width: 300px; height: 214px;"
+                                class=""></iframe></span></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
     <!-- Container - table -->
     <center>
 
     </center>
     <script src="modal.js"></script>
-    
+
     <script src="prepareJS.js"> </script>
     <script>
         // user_info => details info , user_account => account+password;
@@ -123,7 +177,7 @@
         var current_user_name = null;
         let i = 0;
 
-        while (i < 10) {
+        while (i < 27) {
             main_question.push({ title: "first-project", topic: "ctn news", tag: "math", moredetail: "the first programming language" });
             $("#t_body").append(` 
               <tr style="height : 70px;">
@@ -138,9 +192,10 @@
         var question;
         $('#submit').click(function () {
             question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() };
-          
+
             main_question.push(question);
             console.log(main_question);
+            paginator(main_question.length);
             /* 
                 newAsc() OR popularDesc()
                 call display method
@@ -153,22 +208,14 @@
         $("#tbl-table-right").on("click", function () {
             newDesc();
         });
-        $("#first-fade-out").on("click", function () {
-            $(".first-drop").slideToggle(300);
-        });
-        $("#second-fade-out").click(function () {
-            $(".second-drop").slideToggle(300);
-        });
-        $("#third-fade-out").click(function () {
-            $(".third-drop").slideToggle(300);
-        })
+     
 
         const questionToDatalist = () => {
             let array = new Array();
             main_question.forEach(element => {
                 array.push(element.topic);
             });
-            console.log(array)
+            
             setDataList(array)
         }
         const setDataList = (data) => {
@@ -177,7 +224,53 @@
                 $("#data-store").append("<option value='" + data[i] + "'>");
             }
         }
+        const displayer = (lenghtIndex) => {
+            $("#t_body").empty();
+            let maxer = (10*lenghtIndex)+10;
+            for (let index = 10 * lenghtIndex ; index < maxer; index++) {
+               try {
+                $("#t_body").append(tableRow(main_question[index].topic,index,index,main_question[index].title)  )
+               } catch (error) {
+                   break;
+               }
+               
+            }
+
+
+        }
+
+        
+        const tableRow = (title, eye, like, user) => {
+            let diver = ` 
+            <br><br>
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        <p class= "title"> ${title}</p>
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span>${eye}</span>
+                        &nbsp;
+                        <i class="far fa-thumbs-up" aria-hidden="true"></i>
+                        <span>${like}</span>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Asked By ${user} In last 8 Month</p>
+                    </div>
+                </div>    
+            </div>
+            <hr>
+            `;
+            return diver;
+        }
         questionToDatalist()
+        paginator(main_question.length)
+        displayer(0)
     </script>
     <script src="register.js">  </script>
 

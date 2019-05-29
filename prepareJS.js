@@ -4,38 +4,51 @@ $("#btn-logout").on("click",function () {
     current_user_name = null;
     $("#btn-ask").attr("data-target","#myModal");
 });
-const newAsc = () => {
-    $("#t_body").empty();
-    main_question.forEach((value, key) => {
 
-        // title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val()
-        $("#t_body").append(` 
-          <tr>
-              <td>${key}</td>
-              <td>${value.title}</td>
-              <td>${value.topic}</td>
-              <td>${value.tag}</td>
-              <td>${value.moredetail}</td>
-          </tr>`
-        )
-    });
+var order = true;
+var current_page = 0;
+const newAsc = () => {
+        if(order == false){
+            main_question =  main_question.reverse();
+            order =true;  
+        }
+           
+            
+        displayer(0);
 }
+
+
+
+
 
 const newDesc = () => {
-    $("#t_body").empty();
-    main_question.reverse().forEach((value, key) => {
-        console.log(value)
-        $("#t_body").append(` 
-          <tr>
-          <td>${key}</td>
-          <td>${value.title}</td>
-          <td>${value.topic}</td>
-          <td>${value.tag}</td>
-          <td>${value.moredetail}</td>
-          </tr>`
-        )
-    });
+    if(order ==true){
+        main_question =  main_question.reverse();
+        order = false;
+    }
+
+    displayer(0);
 }
+
+
+
+const paginator = (arrayLength) => {  
+    let num = arrayLength / 10 + (arrayLength%10 == 0 ? 0 : 1) ;
+    let numberList = `<li class="page-item"><a class="page-link">Previous</a></li>`;
+    for (let i = 1; i <= num; i++) {
+        numberList += `<li class="page-item"><a class="page-link link-number" data-id="${i}">${i}</a></li>`;
+    }
+    numberList += ` <li class="page-item"><a class="page-link">Next</a></li>`;
+    
+    $("#paginator").html(numberList);
+}
+
+$(function(){
+    $(".link-number").on("click",function(){
+        current_page = parseInt($(this).attr("data-id"));
+        displayer(parseInt($(this).attr("data-id"))-1)
+    })
+})
 
 
 /*

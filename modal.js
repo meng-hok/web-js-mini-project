@@ -7,10 +7,12 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
     <button class="btn btn-success btn-drop-subject m-0" id="first-fade-out">High School</button>
 
     <div class="border mx-1">
-        <a class="dropdown-item first-drop" href="#">Action</a>
-        <a class="dropdown-item first-drop" href="#">Another action</a>
-        <a class="dropdown-item first-drop" href="#">Something else here</a>
-        <a class="dropdown-item first-drop" href="#">Something else here</a>
+        <a class="dropdown-item first-drop" href="#">Physic</a>
+        <a class="dropdown-item first-drop" href="#">Math</a>
+        <a class="dropdown-item first-drop" href="#">Chemical</a>
+        <a class="dropdown-item first-drop" href="#">Bio</a>
+        <a class="dropdown-item first-drop" href="#">General Knowledge</a>
+
     </div>
 </div>
 <!--End Subject Dropdown -->
@@ -23,10 +25,9 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
 
     <!--Menu-->
     <div class="border mx-1">
-        <a class="dropdown-item second-drop" href="#">Action</a>
-        <a class="dropdown-item second-drop" href="#">Another action</a>
-        <a class="dropdown-item second-drop" href="#">Something else here</a>
-        <a class="dropdown-item second-drop" href="#">Something else here</a>
+        <a class="dropdown-item second-drop" href="#">Khmer</a>
+        <a class="dropdown-item second-drop" href="#">English</a>
+        <a class="dropdown-item second-drop" href="#">Korean</a>
     </div>
 </div>
 <!--Language Dropdown-->
@@ -40,10 +41,11 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
 
     <!--Menu-->
     <div class="border mx-1">
-        <a class="dropdown-item third-drop" href="#">Action</a>
-        <a class="dropdown-item third-drop" href="#">Another action</a>
-        <a class="dropdown-item third-drop" href="#">Something else here</a>
-        <a class="dropdown-item third-drop" href="#">Something else here</a>
+        <a class="dropdown-item third-drop" href="#">Programming</a>
+        <a class="dropdown-item third-drop" href="#">Web Development</a>
+        <a class="dropdown-item third-drop" href="#">Graphic Design</a>
+        <a class="dropdown-item third-drop" href="#">Database</a>
+        <a class="dropdown-item third-drop" href="#">Computer Science</a>
     </div>
 </div>
 <!--Programming Dropdown-->`);
@@ -67,7 +69,7 @@ $("#first-nav-bar").html(`
     <ul class="navbar-nav mr-auto w-75">
         <li class="nav-item w-100">
             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control w-50  " autocomplete=off list="data-store" type="search" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
+                <input class="form-control w-50  " autocompleted="off" list="data-store" type="search" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search">
                
                 <button type="button" class="ml-0 btn btn-default5">Search</button>
 
@@ -255,3 +257,13 @@ $("#modalContactForm").html(`
 </div>
 </div>
 `) 
+
+$("#first-fade-out").on("click", function () {
+    $(".first-drop").slideToggle(300);
+});
+$("#second-fade-out").click(function () {
+    $(".second-drop").slideToggle(300);
+});
+$("#third-fade-out").click(function () {
+    $(".third-drop").slideToggle(300);
+})
