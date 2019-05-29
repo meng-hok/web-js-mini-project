@@ -48,6 +48,8 @@ $(function(){
         current_page = parseInt($(this).attr("data-id"));
         displayer(parseInt($(this).attr("data-id"))-1)
     })
+
+  
 })
 
 

@@ -224,6 +224,16 @@
                 $("#data-store").append("<option value='" + data[i] + "'>");
             }
         }
+
+        
+        const btnWorker = () => {
+            $(".like-click").on("click",function() {
+                let num = $(this).next();
+                num.text(parseInt(num.text())+1);
+                });
+        }
+            
+
         const displayer = (lenghtIndex) => {
             $("#t_body").empty();
             let maxer = (10*lenghtIndex)+10;
@@ -235,6 +245,7 @@
                }
                
             }
+            btnWorker();
 
 
         }
@@ -256,7 +267,7 @@
                         <i class="fa fa-eye" aria-hidden="true"></i>
                         <span>${eye}</span>
                         &nbsp;
-                        <i class="far fa-thumbs-up" aria-hidden="true"></i>
+                        <i class="far fa-thumbs-up like-click" aria-hidden="true"></i>
                         <span>${like}</span>
                     </div>
                     <div class="col-md-4">
@@ -270,7 +281,9 @@
         }
         questionToDatalist()
         paginator(main_question.length)
-        displayer(0)
+        displayer(2)
+
+       
     </script>
     <script src="register.js">  </script>
 
