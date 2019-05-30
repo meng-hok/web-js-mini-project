@@ -10,7 +10,7 @@ var current_page = 0;
 const newAsc = () => {
         if(order == false){
             main_question =  main_question.reverse();
-            order =true;  
+            order = true;  
         }
 
         displayer(0);

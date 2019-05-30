@@ -273,5 +273,5 @@ $("#third-fade-out").click(function () {
 })
 
 const modelCleaner = (classStr) => {
-    classStr.value("");
+    classStr.val("");
 }
