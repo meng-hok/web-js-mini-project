@@ -199,17 +199,38 @@
                   </tr>`)
             i++;
         }
-
+        function getUserName(gmail){
+            var idn=gmail.split("@")
+            if(idn[0].indexOf(".")==-1){
+                return idn[0];
+            }
+            else{
+            return idn[0].split(".")[0]+" "+idn[0].split(".")[1];
+            }
+        }
 
         var question;
         $('#submit').click(function () {
-            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :current_user_name };     
+            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :getUserName(current_user_name)  };     
+            if($('#title').val().length<1){
+               alert("Missing title!")
+               return;
+           }
+           if( $('#topic').val().length<1){
+               alert("Missing Topic!")
+               return;
+           }
+           if( $('#detail').val().length<1){
+               alert("Missing Comment!")
+               return;
+           }            
             $("#modalAskingQuestion").modal("hide");
             main_question.push(question);
             questionToDatalist()
             paginator(main_question.length);
             eventToPaginator();
             modelCleaner($(".ask-cleaner"))
+            order = true;
             displayer( current_page==0 ? 0 : current_page-1);
             /* 
                 newAsc() OR popularDesc()
@@ -249,12 +270,12 @@
         }
             
 
-        const displayer = (lenghtIndex) => {
+        const displayer = (lenghtIndex, arrayer = main_question) => {
             $("#t_body").empty();
             let maxer = (10*lenghtIndex)+10;
             for (let index = 10 * lenghtIndex ; index < maxer; index++) {
                try {
-                $("#t_body").append(tableRow(main_question[index].title,index,index,main_question[index].user)  )
+                $("#t_body").append(tableRow(arrayer[index].title,index,index,main_question[index].user)  )
                } catch (error) {
                    break;
                }
@@ -290,13 +311,13 @@
                     </div>
                 </div>    
             </div>
-            <hr>
+            <hr class="hrcontent">
             `;
             return diver;
         }
         questionToDatalist()
         paginator(main_question.length)
-        displayer(2)
+        displayer(0)
 
        
     </script>

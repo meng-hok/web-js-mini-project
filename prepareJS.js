@@ -1,19 +1,26 @@
- $("#btn-ask").attr("data-target","#myModal")
+$("#btn-ask").attr("data-target","#myModal")
 // #modalAskingQuestion#modalContactForm
 $("#btn-logout").on("click",function () {
     current_user_name = null;
-    $("#btn-ask").attr("data-target","#myModal");
+    if(confirm(`Are you sure to login out`)==true){
+        $("#btn-ask").attr("data-target","#myModal");
+    }else{
+        return;
+    }
+    
 });
 
 var order = true;
 var current_page = 0;
+
 const newAsc = () => {
+    let question = [...main_question];
         if(order == false){
-            main_question =  main_question.reverse();
+            let prev_main_question =  question;
             order = true;  
+            displayer(0,prev_main_question);
         }
 
-        displayer(0);
 }
 
 
@@ -21,12 +28,16 @@ const newAsc = () => {
 
 
 const newDesc = () => {
+    let question = [...main_question];
+    
     if(order ==true){
-        main_question =  main_question.reverse();
+        
+        let prev_main_question =  question.reverse();
         order = false;
-    }
+        displayer(0,prev_main_question);
+      }
 
-    displayer(0);
+  
 }
 
 

@@ -74,3 +74,10 @@ input:hover{
 .can{
     background-color: dimgray;
 }
+
+.hrcontent{
+    width: 99%!important;
+    margin-top: 0!important;
+    border-bottom: 2.5px solid #50a253!important;
+    box-shadow: 0px 20px 20px -20px #333!important;
+  }
