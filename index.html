@@ -172,13 +172,16 @@
     </footer>
     <!-- Container - table -->
     <center>
-
+        
     </center>
     <script src="ckeditor.js"></script>
     <script src="modal.js"></script>
 
     <script src="prepareJS.js"> </script>
     <script>
+        // 
+        // 
+        // 
         // user_info => details info , user_account => account+password;
         var main_question = new Array();
         var user_account = new Array();
@@ -200,11 +203,13 @@
 
         var question;
         $('#submit').click(function () {
-            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() };
-
+            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :current_user_name };     
+            $("#modalAskingQuestion").modal("hide");
             main_question.push(question);
+            questionToDatalist()
             paginator(main_question.length);
             eventToPaginator();
+            modelCleaner(".ask-cleaner")
             displayer( current_page==0 ? 0 : current_page-1);
             /* 
                 newAsc() OR popularDesc()
@@ -223,7 +228,7 @@
         const questionToDatalist = () => {
             let array = new Array();
             main_question.forEach(element => {
-                array.push(element.topic);
+                array.push(element.title);
             });
             
             setDataList(array)
@@ -249,7 +254,7 @@
             let maxer = (10*lenghtIndex)+10;
             for (let index = 10 * lenghtIndex ; index < maxer; index++) {
                try {
-                $("#t_body").append(tableRow(main_question[index].topic,index,index,main_question[index].title)  )
+                $("#t_body").append(tableRow(main_question[index].title,index,index,main_question[index].user)  )
                } catch (error) {
                    break;
                }
@@ -281,7 +286,7 @@
                         <span>${like}</span>
                     </div>
                     <div class="col-md-4">
-                        <p>Asked By ${user} In last 8 Month</p>
+                        <p>Asked By ${user == null ? "Unknown" :user} In last 8 Month</p>
                     </div>
                 </div>    
             </div>

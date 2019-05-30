@@ -1,4 +1,4 @@
-// $("#btn-ask").attr("data-target","#myModal")
+ $("#btn-ask").attr("data-target","#myModal")
 // #modalAskingQuestion#modalContactForm
 $("#btn-logout").on("click",function () {
     current_user_name = null;
@@ -63,6 +63,7 @@ $(function(){
     } );
   
 })
+
 
 
 /*

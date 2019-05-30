@@ -110,13 +110,13 @@ $("#myModal").html(` <div class="modal-dialog" role="document">
     <div class="mbody">
                           <div>
             <label for="userName" class="labeler">User Name:<i class="fas fa-exclamation-circle ipengsea" id="ex1"></i></label>
-            <input type="text" name="userName" id="userName" class="fcontrol">
+            <input type="text" name="userName" id="userName" class="fcontrol log-cleaner">
             
         </div>
 
         <div class="form-group div2">
             <label class="labeler">Password: </label>
-            <input type="password" name="password" id="password" class="fcontrol" >
+            <input type="password" name="password" id="password" class="fcontrol log-cleaner" >
             <i class="fas fa-exclamation-circle ml-2 ipengsea" id="ex2"></i>
             
         </div>
@@ -147,14 +147,14 @@ $("#modalAskingQuestion").html(`
             <div class="form-group row">
                 <label for="title" class="col-sm-2 col-form-label">Title</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="title" placeholder="Asking question here.">
+                    <input type="text" class="form-control ask-cleaner" id="title" placeholder="Asking question here.">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="topic" class="col-sm-2 col-form-label">Topic</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="topic" placeholder="--Select Topic--">
+                    <input type="text" class="form-control ask-cleaner" id="topic" placeholder="--Select Topic--">
                 </div>
             </div>
 
@@ -162,7 +162,7 @@ $("#modalAskingQuestion").html(`
             <div class="form-group row">
                 <label for="tag" class="col-sm-2 col-form-label">Tag</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="tag" placeholder="Add a tag">
+                    <input type="text" class="form-control ask-cleaner" id="tag" placeholder="Add a tag">
                 </div>
             </div>
 
@@ -199,25 +199,25 @@ $("#modalContactForm").html(`
     <div class="  mb-3">
    <!-- email -->
       <label for="email">Input your email</label>
-      <input type="email" id="email-text" class="form-control  " placeholder="E-mail">
+      <input type="email" id="email-text" class="form-control res-cleaner " placeholder="E-mail">
     </div>
 
     <div class="  mb-3">
        <!-- re-email -->
        <label for="re-email-text">Input your email</label>
-       <input type="email" id="re-email-text" class="form-control  " placeholder="Re-enter e-mail">
+       <input type="email" id="re-email-text" class="form-control res-cleaner " placeholder="Re-enter e-mail">
     </div>
 
     <div class="  mb-3">
   <!-- username-text -->
   <label for="username-text">Input your username</label>
-  <input type="text" id="username-text" class="form-control " placeholder="Username">
+  <input type="text" id="username-text" class="form-control res-cleaner " placeholder="Username">
     </div>
 
     <div class="mb-3">
      <!-- password -->
      <label for="password-text">Input your password</label>
-     <input type="password" id="password-text" class="form-control " placeholder="Password">
+     <input type="password" id="password-text" class="form-control res-cleaner" placeholder="Password">
     </div>
       
    
@@ -271,3 +271,7 @@ $("#second-fade-out").click(function () {
 $("#third-fade-out").click(function () {
     $(".third-drop").slideToggle(300);
 })
+
+const modelCleaner = (classStr) => {
+    $(classStr).value("");
+}

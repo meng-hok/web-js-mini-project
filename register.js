@@ -49,6 +49,8 @@ function getData() {
         console.log(user_account)  
         current_user_name = username;
         $("#btn-ask").attr("data-target","#modalAskingQuestion");
+        $('#modalContactForm').modal('hide');
+        modelCleaner(".res-cleaner")
     } catch (msg) {
         console.log(msgError);
         return 0;
@@ -107,6 +109,7 @@ $("#logIn").click(function() {
     if (Account[userName] == pw) {
       current_user_name = userName;
       $("#btn-ask").attr("data-target","#modalAskingQuestion");
+      modelCleaner(".log-cleaner")
       return true;
     }
     return false;
