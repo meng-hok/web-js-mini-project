@@ -196,22 +196,25 @@ $("#modalContactForm").html(`
     </button>
   </div>
   <div class="modal-body mx-3">
+
+    <div id="error" class="  mb-3" style="color:red"></div>
     <div class="  mb-3">
+    <form>
    <!-- email -->
       <label for="email">Input your email</label>
-      <input type="email" id="email-text" class="form-control res-cleaner " placeholder="E-mail">
+      <input type="email" id="email-text" class="form-control res-cleaner"  required placeholder="E-mail">
     </div>
 
-    <div class="  mb-3">
+    <div class="mb-3">
        <!-- re-email -->
        <label for="re-email-text">Input your email</label>
-       <input type="email" id="re-email-text" class="form-control res-cleaner " placeholder="Re-enter e-mail">
+       <input type="email" id="re-email-text" class="form-control res-cleaner " required placeholder="Re-enter e-mail">
     </div>
 
     <div class="  mb-3">
   <!-- username-text -->
   <label for="username-text">Input your username</label>
-  <input type="text" id="username-text" class="form-control res-cleaner " placeholder="Username">
+  <input type="text" id="username-text" class="form-control res-cleaner "  required placeholder="Username">
     </div>
 
     <div class="mb-3">
@@ -220,8 +223,6 @@ $("#modalContactForm").html(`
      <input type="password" id="password-text" class="form-control res-cleaner" placeholder="Password">
     </div>
       
-   
-          
     <div class="  mb-3">
       <label for="gender-select">Gender</label>
       <select class="browser-default custom-select " id="gender-select">
@@ -251,8 +252,9 @@ $("#modalContactForm").html(`
           <option value="Bkk">Bkk</option>
 
       </select>
+      </form>
         </div>
-
+        
   </div>
   <div class="modal-footer d-flex justify-content-center">
       <button id="btn-submit" class="btn btn-block btn-success">Sign in</button>
