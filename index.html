@@ -199,11 +199,19 @@
                   </tr>`)
             i++;
         }
-
+        function getUserName(gmail){
+            var idn=gmail.split("@")
+            if(idn[0].indexOf(".")==-1){
+                return idn[0];
+            }
+            else{
+            return idn[0].split(".")[0]+" "+idn[0].split(".")[1];
+            }
+        }
 
         var question;
         $('#submit').click(function () {
-            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :current_user_name };     
+            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :getUserName(current_user_name)  };     
             if($('#title').val().length<1){
                alert("Missing title!")
                return;
@@ -303,7 +311,7 @@
                     </div>
                 </div>    
             </div>
-            <hr>
+            <hr class="hrcontent">
             `;
             return diver;
         }

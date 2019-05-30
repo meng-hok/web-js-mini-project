@@ -47,7 +47,7 @@ function getData() {
         user_account[email] = password; 
         console.log(user_info)   
         console.log(user_account)  
-        current_user_name = username;
+        current_user_name = email;
         $("#btn-ask").attr("data-target","#modalAskingQuestion");
         $('#modalContactForm').modal('hide');
         modelCleaner($(".res-cleaner"))
