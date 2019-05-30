@@ -11,7 +11,7 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
         <a class="dropdown-item first-drop" href="#">Math</a>
         <a class="dropdown-item first-drop" href="#">Chemical</a>
         <a class="dropdown-item first-drop" href="#">Bio</a>
-        <a class="dropdown-item first-drop" href="#">General Knowledge</a>
+        <a class="dropdown-item first-drop" href="#">Knowledge</a>
 
     </div>
 </div>
@@ -42,10 +42,10 @@ $("#left-side-3-dropdown").html(`<!--Subject Drobdown-->
     <!--Menu-->
     <div class="border mx-1">
         <a class="dropdown-item third-drop" href="#">Programming</a>
-        <a class="dropdown-item third-drop" href="#">Web Development</a>
-        <a class="dropdown-item third-drop" href="#">Graphic Design</a>
+        <a class="dropdown-item third-drop" href="#">Web</a>
+        <a class="dropdown-item third-drop" href="#">Design</a>
         <a class="dropdown-item third-drop" href="#">Database</a>
-        <a class="dropdown-item third-drop" href="#">Computer Science</a>
+        <a class="dropdown-item third-drop" href="#">Science</a>
     </div>
 </div>
 <!--Programming Dropdown-->`);
@@ -66,15 +66,16 @@ $("#first-nav-bar").html(`
     <span class="navbar-toggler-icon"></span>
 </button>
 <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent-333">
-    <ul class="navbar-nav mr-auto w-75">
+    <ul class="navbar-nav mr-auto w-50">
         <li class="nav-item w-100">
             <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control w-50  "  list="data-store" type="text" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search"  autocomplete="off"/>
+                
+             
+                <input class="form-control " style="width:40%" list="data-store" type="text" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search"  autocomplete="off"/>
                
-                <button type="button" class="ml-0 btn btn-default5">Search</button>
-
-                <button id="btn-ask" type="button" class="btn btn-default5" data-toggle="modal"
-                    data-target="#modalAskingQuestion">Asking Question</button>
+                <button type="button" style="width:20%; font-size :10px" class="ml-0 btn btn-default5">Search</button>
+                <button id="btn-ask" style="width:10% font-size :5px" type="button" class="btn btn-default5" data-toggle="modal"
+                data-target="#modalAskingQuestion">ASK</button>
 
 
             </form>
