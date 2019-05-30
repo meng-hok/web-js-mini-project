@@ -261,12 +261,12 @@
         }
             
 
-        const displayer = (lenghtIndex) => {
+        const displayer = (lenghtIndex, arrayer = main_question) => {
             $("#t_body").empty();
             let maxer = (10*lenghtIndex)+10;
             for (let index = 10 * lenghtIndex ; index < maxer; index++) {
                try {
-                $("#t_body").append(tableRow(main_question[index].title,index,index,main_question[index].user)  )
+                $("#t_body").append(tableRow(arrayer[index].title,index,index,main_question[index].user)  )
                } catch (error) {
                    break;
                }
