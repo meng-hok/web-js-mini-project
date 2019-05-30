@@ -204,6 +204,18 @@
         var question;
         $('#submit').click(function () {
             question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :current_user_name };     
+            if($('#title').val().length<1){
+               alert("Missing title!")
+               return;
+           }
+           if( $('#topic').val().length<1){
+               alert("Missing Topic!")
+               return;
+           }
+           if( $('#detail').val().length<1){
+               alert("Missing Comment!")
+               return;
+           }            
             $("#modalAskingQuestion").modal("hide");
             main_question.push(question);
             questionToDatalist()

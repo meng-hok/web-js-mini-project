@@ -85,9 +85,9 @@ $("#first-nav-bar").html(`
     </button>
     <button id="btn-register" type="button" class="btn  btn-outline-white btn-success btn-md my-2 my-sm-0 ml-3" id="btnnGoIn"
         data-toggle="modal" data-target="#modalContactForm">
-        Sign Up
+        New
     </button>
-    <button id="btn-logout" class="btn  btn-outline-white  btn-success btn-md my-2 my-sm-0 ml-3" >Log Out</button>   
+    <button id="btn-logout" class="btn  btn-outline-white  btn-success btn-md my-2 my-sm-0 ml-3" >Out</button>   
 </div>
 
 </nav>

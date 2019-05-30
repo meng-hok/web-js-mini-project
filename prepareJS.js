@@ -2,7 +2,12 @@
 // #modalAskingQuestion#modalContactForm
 $("#btn-logout").on("click",function () {
     current_user_name = null;
-    $("#btn-ask").attr("data-target","#myModal");
+    if(confirm(`Are you sure to login out`)==true){
+        $("#btn-ask").attr("data-target","#myModal");
+    }else{
+        return;
+    }
+    
 });
 
 var order = true;
