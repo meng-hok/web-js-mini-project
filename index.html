@@ -16,24 +16,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/loginStyle.css">
-    <script src="jquery-3.4.1.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
 
-    <style>
-        .list {
-            padding-top: 10%;
-        }
-
-        .footer-row,
-        .list>li>a {
-            color: #FFF;
-        }
-        .ck-content{
-            height: 300px;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 
 <body style="background-color:lavenderblush;">
@@ -116,11 +100,12 @@
 
         </div>
     </div>
-    <footer class="mt-3 pt-3" style="background-color: #656D78">
+    <footer class="mt-3 pt-3" style="background-color: #1c2331">
 
         <div class="container">
+            <br>
             <div class="row footer-row">
-                <div class="col-sm-3">
+                <div class=" col-3 col-sm-3">
                     <h4>Service</h4>
                     <ul class="list">
                         <li><a href="http://www.khmeracademy.org/elearning">Video</a></li>
@@ -129,7 +114,7 @@
                         <li><a href="http://news.khmeracademy.org" target="_blank">News</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-3 col-sm-3">
                     <h4>Social Media</h4>
                     <ul class="list">
                         <li><a href="https://www.facebook.com/KhmerAcademy.Org/" target="_blank">Facebook</a></li>
@@ -138,18 +123,20 @@
                                 target="_blank">Youtube</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-3 col-sm-3">
                     <h4>Download Mobile App</h4>
                     <ul class="list">
-                        <li><a href="https://itunes.apple.com/kh/app/khmer-academy/id1082906587?mt=8"
-                                target="_blank"><img width="60px" src="https://www.xda-developers.com/files/2018/01/Google-Play-Store-Feature-Image-Background-Colour.png"></a></li>
-                        <br>
-                        <li><a href="https://play.google.com/store/apps/details?id=org.khmeracademy"
-                                target="_blank"><img width="60px" src="data:image/png;base64,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"></a></li>
+                        <li>
+                            <img class="appstore" src="image/appstore.png" alt="appstore_logo">
+                        </li>
+                        <li>
+                            <img class="playstore" src="image/aaaa.png" alt="playstore_logo">
+                        </li>
+
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <h4>Searching On Facebook</h4>
+                <div class="col-3 col-sm-3">
+                    <h4> Searching On Facebook</h4>
                     <div class="fb-like-box fb_iframe_widget" data-colorscheme="dark" data-header="false"
                         data-href="https://www.facebook.com/KhmerAcademy.Org" data-show-border="false"
                         data-show-faces="true" data-stream="false"
@@ -162,166 +149,67 @@
                                 src="https://www.facebook.com/v2.10/plugins/like_box.php?app_id=358370081247839&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df1175cdf68ebf6c%26domain%3Dforum.khmeracademy.org%26origin%3Dhttp%253A%252F%252Fforum.khmeracademy.org%252Ff38abce1ea3de5%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=300&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FKhmerAcademy.Org&amp;locale=en_GB&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"
                                 style="border: none; visibility: visible; width: 300px; height: 214px;"
                                 class=""></iframe></span></div>
-                    <a href="#first-nav-bar" class="btn btn-success "  style="position : absolute ; bottom: 45%; right:-80%; " > <span class="" style="font-weight: 900;">^</span> </a>
+                    <a href="#first-nav-bar" class="btn btn-success "
+                        style="position : absolute ; bottom: 45%; right:-80%; "> <span class=""
+                            style="font-weight: 900;">^</span> </a>
 
 
                 </div>
+                <div>
+                    <br>
+                </div>
             </div>
+            <br>
         </div>
-        
+        <div>
+            <!--*************************** Icon ******************************-->
+            <!-- Social buttons at footer-->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1 waves-effect waves-light"
+                        href="https://web.facebook.com/asnavy.husein" target="_blank">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1 waves-effect waves-light" href="https://twitter.com/AsnavyH"
+                        target="_blank">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1 waves-effect waves-light" href="https://www.linkedin.com"
+                        target="_blank">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-insta mx-1 waves-effect waves-light"
+                        href="https://www.instagram.com/sinawa_hensu/" target="_blank">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-git mx-1 waves-effect waves-light" href="https://github.com"
+                        target="_blank">
+                        <i class="fab fa-github"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ****************************End Icon*************************** -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright
+        </div>
     </footer>
     <!-- Container - table -->
     <center>
-        
+
     </center>
-    <script src="ckeditor.js"></script>
-    <script src="modal.js"></script>
-
-    <script src="prepareJS.js"> </script>
-    <script>
-        // 
-        // 
-        // 
-        // user_info => details info , user_account => account+password;
-        var main_question = new Array();
-        var user_account = new Array();
-        var user_info = new Array();
-        var current_user_name = null;
-        let i = 0;
-
-        while (i < 27) {
-            main_question.push({ title: "first-project", topic: "ctn news", tag: "math", moredetail: "the first programming language" });
-            $("#t_body").append(` 
-              <tr style="height : 70px;">
-                      <td>${i} Welcome to Hrd</td>
-                      <td><sub>30 <3  </sub></td>
-                      <td>Welcome to Hrd </td>
-                  </tr>`)
-            i++;
-        }
-        function getUserName(gmail){
-            var idn=gmail.split("@")
-            if(idn[0].indexOf(".")==-1){
-                return idn[0];
-            }
-            else{
-            return idn[0].split(".")[0]+" "+idn[0].split(".")[1];
-            }
-        }
-
-        var question;
-        $('#submit').click(function () {
-            question = { title: $('#title').val(), topic: $('#topic').val(), tag: $('#tag').val(), moredetail: $('#detail').val() ,user :getUserName(current_user_name)  };     
-            if($('#title').val().length<1){
-               alert("Missing title!")
-               return;
-           }
-           if( $('#topic').val().length<1){
-               alert("Missing Topic!")
-               return;
-           }
-           if( $('#detail').val().length<1){
-               alert("Missing Comment!")
-               return;
-           }            
-            $("#modalAskingQuestion").modal("hide");
-            main_question.push(question);
-            questionToDatalist()
-            paginator(main_question.length);
-            eventToPaginator();
-            modelCleaner($(".ask-cleaner"))
-            order = true;
-            displayer( current_page==0 ? 0 : current_page-1);
-            /* 
-                newAsc() OR popularDesc()
-                call display method
-            */
-        });
-
-        $("#tbl-table-left").on("click", function () {
-            newAsc();
-        });
-        $("#tbl-table-right").on("click", function () {
-            newDesc();
-        });
-     
-
-        const questionToDatalist = () => {
-            let array = new Array();
-            main_question.forEach(element => {
-                array.push(element.title);
-            });
-            
-            setDataList(array)
-        }
-        const setDataList = (data) => {
-            $("#data-store").empty();
-            for (var i = 0; i < data.length; i++) {
-                $("#data-store").append("<option value='" + data[i] + "'>");
-            }
-        }
-
-        
-        const btnWorker = () => {
-            $(".like-click").on("click",function() {
-                let num = $(this).next();
-                num.text(parseInt(num.text())+1);
-                });
-        }
-            
-
-        const displayer = (lenghtIndex, arrayer = main_question) => {
-            $("#t_body").empty();
-            let maxer = (10*lenghtIndex)+10;
-            for (let index = 10 * lenghtIndex ; index < maxer; index++) {
-               try {
-                $("#t_body").append(tableRow(arrayer[index].title,index,index,main_question[index].user)  )
-               } catch (error) {
-                   break;
-               }
-               
-            }
-            btnWorker();
-
-
-        }
-
-        
-        const tableRow = (title, eye, like, user) => {
-            let diver = ` 
-            <br><br>
-            <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-md-12">
-                        <p class= "title"> ${title}</p>
-                    </div>
-                    <div class="col-md-4">
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                        <span>${eye}</span>
-                        &nbsp;
-                        <i class="far fa-thumbs-up like-click" aria-hidden="true"></i>
-                        <span>${like}</span>
-                    </div>
-                    <div class="col-md-4">
-                        <p>Asked By ${user == null ? "Unknown" :user} In last 8 Month</p>
-                    </div>
-                </div>    
-            </div>
-            <hr class="hrcontent">
-            `;
-            return diver;
-        }
-        questionToDatalist()
-        paginator(main_question.length)
-        displayer(0)
-
-       
-    </script>
-    <script src="register.js">  </script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/prepareJS.js"></script>
+    <script src="js/register.js"> </script>
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

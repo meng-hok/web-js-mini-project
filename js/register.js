@@ -50,7 +50,7 @@ function getData() {
     user_info.push({ email: email, username: username, password: password, gender: gender, department: department, university: university });
     user_account[email] = password;
 
-    current_user_name = username;
+    current_user_name = email;
 
     $("#btn-ask").attr("data-target", "#modalAskingQuestion");
     $('#modalContactForm').modal('hide');

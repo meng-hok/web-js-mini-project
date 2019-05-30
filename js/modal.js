@@ -73,7 +73,7 @@ $("#first-nav-bar").html(`
              
                 <input class="form-control " style="width:40%" list="data-store" type="text" id="" placeholder="ស្វែងរកសំណួរ..." aria-label="Search"  autocomplete="off"/>
                
-                <button type="button" style="width:20%; font-size :10px" class="ml-0 btn btn-default5">Search</button>
+                <button type="button" style="width:23%; font-size :12px" class="ml-0 btn btn-default5">Search</button>
                 <button id="btn-ask" style="width:10% font-size :5px" type="button" class="btn btn-default5" data-toggle="modal"
                 data-target="#modalAskingQuestion">ASK</button>
 

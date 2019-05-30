@@ -37,3 +37,108 @@
     padding-top: 30px !important;
     color: rgb(0, 0, 0);
 }
+
+/**************************************** Updated Footer ********************************************/
+
+.appstore{
+    width: 80% !important;
+    height: 80% !important;
+}
+.playstore{
+  width: 80% !important;
+  height: 85% !important;
+  margin-top: 8px;   
+}
+ul{
+  list-style: none;
+}
+.footer-copyright{
+  background-color: #161c27;
+  color: aliceblue;
+}
+li{
+  text-align: -webkit-match-parent;
+  box-sizing: border-box;
+}
+
+
+/* icon */
+
+.btn-floating {
+  width: 47px;
+  height: 47px;
+  position: relative;
+  vertical-align: middle;
+  margin: 10px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-floating i {
+  display: inline-block;
+  width: inherit;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 47px;
+}
+
+.btn-floating:hover {
+  background: #58647d;
+}
+
+.btn-fb {
+  background-color: #3b5998;
+}
+
+.btn-tw {
+  background-color: #55acee;
+}
+
+.btn-li {
+  background-color: #0082ca;
+}
+
+.btn-insta {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+
+
+/* icon */
+
+/************************** End Updated Footer *************************/
+.list {
+    padding-top: 10%;
+}
+
+.footer-row,
+.list>li>a {
+    color: #FFF;
+}
+.ck-content{
+    height: 300px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.q-tag-show{
+    background-color: #999;
+    color: white;
+    font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
