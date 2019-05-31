@@ -110,7 +110,7 @@ $("#myModal").html(` <div class="modal-dialog" role="document">
     </div>
     <div class="mbody">
                           <div>
-            <label for="userName" class="labeler">User Name:<i class="fas fa-exclamation-circle ipengsea" id="ex1"></i></label>
+            <label for="userName" class="labeler">Email<i class="fas fa-exclamation-circle ipengsea" id="ex1"></i></label>
             <input type="text" name="userName" id="userName" class="fcontrol log-cleaner">
             
         </div>
